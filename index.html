@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <style>
+        body {
+            background-color: #074173;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .division{
+            background-color: white;
+            height: fit-content;
+            width: 600px;
+        }
+        .question {
+            font-weight: bold;
+        }
+        .answers {
+            margin-bottom: 20px;
+        }
+        .answer {
+            display: block;
+            margin: 5px 0;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #51677f;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-left: 130px;
+        }
+        .result {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="division"id="quiz">
+        <h2 style="text-align: center;text-decoration: underline;font-weight: bold;">Quiz</h2>
+        <div class="question">
+            <p>1. What is the capital of India?</p>
+            <div class="answers">
+                <label><input type="radio" name="q1" value="Delhi"> Delhi</label><br>
+                <label><input type="radio" name="q1" value="Mumbai"> Mumbai</label><br>
+                <label><input type="radio" name="q1" value="Ahemdabad"> Ahemdabad</label><br>
+                <label><input type="radio" name="q1" value="Gandhinagar"> Gandhinagar</label><br>
+            </div>
+        </div>
+        <div class="question">
+            <p>2. Which is the biggest country in the world?</p>
+            <div class="answers">
+                <label><input type="radio" name="q2" value="Russia"> Russia</label><br>
+                <label><input type="radio" name="q2" value="China"> China</label><br>
+                <label><input type="radio" name="q2" value="U.S.A."> U.S.A.</label><br>
+                <label><input type="radio" name="q2" value="Canada"> Canada</label><br>
+            </div>
+        </div>
+        <div class="question">
+            <p>3. Who is Current Prime Minister of India?</p>
+            <div class="answers">
+                <label><input type="radio" name="q3" value="JawaharLal Nehru"> JawaharLal Nehru</label><br>
+                <label><input type="radio" name="q3" value="Narendra Modi"> Narendra Modi</label><br>
+                <label><input type="radio" name="q3" value="Manmohan Singh"> Manmohan Singh</label><br>
+                <label><input type="radio" name="q3" value="Rajeev Gandhi"> Rajeev Gandhi</label><br>
+            </div>
+        </div>
+        <div class="question">
+            <p>4. Which is the biggest River in the world?</p>
+            <div class="answers">
+                <label><input type="radio" value="Ganga" name="q4"> Ganga</label><br>
+                <label><input type="radio" value="Bramhputra" name="q4"> Bramhputra</label><br>
+                <label><input type="radio" value="Amazone" name="q4"> Amazone</label><br>
+                <label><input type="radio" value="Nile" name="q4"> Nile</label><br>
+            </div>
+        </div>
+        <div class="question">
+            <p>5. Which is the longest River in the world?</p>
+            <div class="answers">
+                <label><input type="radio" name="q5" value="Ganga"> Ganga</label><br>
+                <label><input type="radio" name="q5" value="Bramhputra"> Bramhputra</label><br>
+                <label><input type="radio" name="q5" value="Amazone"> Amazone</label><br>
+                <label><input type="radio" name="q5" value="Nile"> Nile</label><br>
+            </div>
+        </div>
+        <button class="button" id="submit">Submit</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
